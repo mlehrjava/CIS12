@@ -9,7 +9,7 @@
         $query="INSERT INTO `ml1150258_entity_movie`
                        (`name`,`studio`,`release_date`,
                         `rating_id`,`duration`) VALUES ";
-        $records=1000;
+        $records=100;
         for($i=1;$i<=$records;$i++){
           $query.="('Movie".$i."',";
           $query.=" 'Studio".rand(1,50)."',";
