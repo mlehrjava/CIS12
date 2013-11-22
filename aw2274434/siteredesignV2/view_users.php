@@ -27,7 +27,6 @@
 
 	<div class="tabcont" id="tab01cont">
 	<img id="logo" src="fistsbeige7.png" alt="" />
-	
 		<div id="rightbox">
 				<div id="control_panel">
 				<ul id="navlist" >
@@ -43,7 +42,6 @@
 			Ramon Road<br />
 			at Whispering Palms<br />
 			Cathedral City<br />
-		</div>
 		</div>
 			
 			
