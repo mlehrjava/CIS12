@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<header>
+    <title><?php echo $page_title; ?></title>
+    <link type="text/css" href="stylesheet.css" rel="stylesheet"/>
+</header>
+<body>
+    <!------  Start of Header  ---------->
+    <div id="header">
+        <table id="headertable" width="1280px" height="30px" border="0">
+            <td class="Logo">
+                <a style="border-left:0;border-right:2px solid #EEEFF0;" class="headerlink" href="TCHome.php"><!--<img href="TCLogo.png">-->Place Holder</a>
+            </td>
+            <td class="Navbar">
+                <a style="border-left:0;" class="headerlink" href="TCCS.php">Computer Services</a>
+                <a class="headerlink" href="TCTB.php">The Basics</a>
+                <a class="headerlink" href="TCWG.php">Web and Graphics</a>
+                <a class="headerlink" href="TCTS.php">Technology and Software</a>
+                <a class="headerlink" href="TCCU.php">Contact Us</a>
+            </td>
+        </table>
+    </div>
+    <div id="banner">
+        <img src="http://computersplusrepair.com/wp-content/uploads/2012/03/windows-7-mac-os-x-tp3.png" height="250px">
+        <div id="bannertxt"><h1>In Need Of Computer Repair/Upgrades for Laptop or Desktop Computers?</h1></div>
+        <a href="TCCU.php"><div id="gobutton"><p>GO <span>&#62;</span></p></div><a/>
+    </div>
+    <div id="content">
+    <!----- End of Header/Start of Content ------->
+    With the Lua-part in LuaTeX you have access to most of TeX's capabilities for creating PDF documents. Most of the LuaTeX reference manual is about this topic.
+
+Remember that you can jump into Lua mode from TeX with \directlua{...Lua code...}. For example this plain TeX document prints the first digits of the value of pi: $\pi = \directlua{ tex.print(math.pi)}$ \bye. You can get the result PDF by running luatex testfile.tex.
+
+The underlying idea is to create TeX's internal data structure as TeX would do by transforming macros and primitives into something called nodes. These nodes are then transformed into instructions for the PDF file (PDF objects). So the following pages deal with node creation and the structures.
+
+Let's start with a rule node. When you write \hrule width 20pt height 10pt depth 10pt in TeX, a node of type rule will be created, which has three fields: height, depth and width. We can visualize this node by a simple box like this: 
+    <!----- End of Content/Start of Footer ------->
+    </div>
+    <div id="footer">
+        
+    </div>
+</body>
+</html>

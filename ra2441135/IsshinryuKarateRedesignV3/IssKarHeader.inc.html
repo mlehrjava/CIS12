@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <title><?php echo $page_title; ?></title>
+    <style>
+        #background
+        {
+            background-image:url(<?php echo $bgImg; ?>);
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img id="titleImg1" src="http://isshinryu-karate.com/images/0ee079d2df5c99036753aff72348ba5b_a9hq.jpg" />
+        <marquee width="750" height="73" align="bottom" loop="65" scrollamount="10">Welcome to our <span style=color:#ff0000;>Dojo</span> in Cathedral City California ---- Sensei Sandubrae ---- Sensei McConnell ---- Sensei Tweedie  ---- Sensei Doster ---- Mr Kendel ---- Mr Manger ---- Mr G Petersen ---- Mr M Peterson ---- Mr Caballero ---- Mr Mota ---- </marquee>
+        <a href="IssKarSU.php"><img id="signupImg"src="https://www.tabsite.com/i/button_sign_up_now.jpg" /></a>
+        <?php // Create a login/logout link:
+            //If Logging In Using Cookies:
+            //if ( (isset($_COOKIE['userID'])) && (basename($_SERVER['PHP_SELF']) != 'IssKarLogout.php') )
+            //If Logging In Using Sessions:
+            if (isset($_SESSION['userID']))
+            {
+	            echo '<a class="signin" href="IssKarLogout.php">Sign Out</a>';
+            }
+            else
+            {
+	            echo '<a class="signin" href="IssKarLogin.php">Sign In</a>';
+            }
+        ?>
+        <img id="titleImg2" src="http://isshinryu-karate.com/images/0ee079d2df5c99036753aff72348ba5b_a9hq.jpg" />
+    </div>
+    <!-- End of header/Start of Navbar -->

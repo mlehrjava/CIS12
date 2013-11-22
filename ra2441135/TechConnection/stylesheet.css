@@ -1,0 +1,186 @@
+/*colors #43c7f4 #00adef #abe0f9*/
+html
+{
+    width:1240px;
+    background-color:#EEEFF0;
+}
+#header
+{
+    margin-top:-8px;
+    width:1240px;
+    height:30px;
+    font-family:Arial, sans-serif; 
+}
+#headertable
+{
+    width:1240px;
+    background-color:#2C3846;
+    vertical-align:-20px;
+}
+.headerlink
+{
+    border-left:2px solid #EEEFF0;
+    color:#EEEFF0;
+    text-decoration:none;
+    margin:0px 5px 0px 5px;
+    padding:5px;
+}
+.headerlink:hover
+{
+    font-weight:bold;
+}
+.Logo
+{
+    float:left;
+    text-decoration:none;
+    background-color:#2C3846;
+}
+.Navbar
+{
+    float:right;
+    background-color:#2C3846;
+    text-decoration:none;
+    margin:0px 5px 0px 5px;
+}
+#banner
+{
+    height:250px;
+    width:1220px;
+    margin-top:0px;
+    font-family:Arial,sans-serif;
+}
+#banner img
+{
+    margin-left:41px;
+    margin-right:auto;
+    position:absolute;
+    margin-top:-21px;
+}
+#bannertxt
+{
+    width:320px;
+    position:relative;
+    background-color:rgba(0,0,0,.2);
+    color:#EEEFF0;
+    padding-left:30px;
+    padding-right:px;
+    border-radius:60px;
+    margin-left:150px;
+    margin-top:;
+}
+a 
+{
+    text-decoration:none;
+}
+#gobutton
+{
+    height:60px;
+    width:60px;
+    background-color:#D2573C;
+    text-align:center;
+    border-radius:50px;
+    position:relative;
+    margin: -41px 0px 0px 375px;
+    text-decoration:none;
+}
+#gobutton p
+{
+    padding-top:9px;
+    color:#EEEFF0;
+    font-weight:bold;
+    
+}
+#gobutton span
+{
+    font-size:30px;
+    vertical-align:-4px;
+    
+}
+a #gobutton p:hover
+{
+    color:#2C3846;
+}
+#content
+{
+    
+    position:relative;
+    height:auto;
+    width:1200px;
+    background-color:#D5E0EC;
+    font-family:Arial,sans-serif;
+    color:#2C3846;
+    padding:20px;
+}
+#footer
+{
+    height:40px;
+    width:1240px;
+    background-color:#2C3846;
+    color:#EEEFF0;
+    font-family:Arial,sans-serif;
+    font-size:14px;
+}
+#footer table
+{
+    width:1240px;
+}
+#footer p
+{
+    margin-top:10px;
+}
+#homeTable td
+{
+    width:260px;
+    text-align:justify;
+    margin-left:10px;
+    margin-right:10px;
+}
+#homeTable td p
+{
+    margin-left:10px;
+    margin-right:10px;
+}
+#csTable td
+{
+    padding-left:10px;
+    padding-right:10px;
+    width:260px;
+    text-align:justify;
+    margin-left:10px;
+    margin-right:10px;
+}
+#csTable td p
+{
+    margin-left:10px;
+    margin-right:10px;
+}
+#basicsTable
+{
+    width:1220px;
+}
+#basicsTable td
+{
+    padding-right:50px;
+    text-align:justify;
+    margin-left:10px;
+    margin-right:10px;
+    font-size:18px;
+}
+#basicsTable td p
+{
+    margin-left:10px;
+    margin-right:10px;
+}
+#basicsimgTable td
+{
+    padding-right:50px;
+    text-align:justify;
+    margin-left:10px;
+    margin-right:10px;
+}
+#basicsimgTable td p
+{
+    margin-left:10px;
+    margin-right:10px;
+}
+
