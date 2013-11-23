@@ -4,6 +4,14 @@ html
     width:1240px;
     background-color:#EEEFF0;
 }
+h1
+{
+    font-weight:bold;
+}
+h2
+{
+    font-weight:bold;
+}
 #header
 {
     margin-top:-8px;
@@ -183,4 +191,15 @@ a #gobutton p:hover
     margin-left:10px;
     margin-right:10px;
 }
-
+#tsTable td
+{
+    padding-right:50px;
+    text-align:justify;
+    margin-left:10px;
+    margin-right:10px;
+}
+#tsTable td p
+{
+    margin-left:10px;
+    margin-right:10px;
+}
