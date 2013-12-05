@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<header>
+    <title><?php echo $page_title; ?></title>
+    <link type="text/css" href="stylesheet.css" rel="stylesheet"/>
+</header>
+<body>
+    <!------  Start of Header  ---------->
+    <div id="header">
+        <table id="headertable" width="1240px" height="30px" border="0">
+            <td class="Logo">
+                <a style="border-left:0;border-right:2px solid #EEEFF0;" class="headerlink" href="TCHome.php"><!--<img href="TCLogo.png">-->Place Holder</a>
+            </td>
+            <td class="Navbar">
+                <a style="border-left:0;" class="headerlink" href="TCCS.php">Computer Services</a>
+                <a class="headerlink" href="TCTB.php">The Basics</a>
+                <a class="headerlink" href="TCWG.php">Web and Graphics</a>
+                <a class="headerlink" href="TCTS.php">Technology and Software</a>
+                <a class="headerlink" href="TCCU.php">Contact Us</a>
+            </td>
+        </table>
+    </div>
+    <!----- End of Header/Start of Content ------>
+    
+    <div id="content">
+        <h1>Contact Us</h1>
+        <br />
+        <h2>We are located at 6115-A Orange Ave.
+Long Beach, Ca. 90805.</h2>
+        <h2>Contact us by phone:</h2>
+        
+        <h2>Business: (562) 984-7856</h2>
+        <h2>Mobile: (562) 552-3243</h2>
+        <h2>Or Email Us with Your Questions, Concerns or Feedback:</h2>
+        <?php # Script 11.1 - email.php
+
+        // Check for form submission:
+            if ($_SERVER['REQUEST_METHOD'] == 'POST') 
+            {
+
+	            // Minimal form validation:
+	            if (!empty($_POST['name']) && !empty($_POST['email']) && !empty($_POST['comments']) ) 
+	            {
+		            // Create the body:
+		            $body = "Name: {$_POST['name']}\n\nComments: {$_POST['comments']}";
+
+		            // Make it no longer than 70 characters long:
+		            $body = wordwrap($body, 70);
+	
+		            // Send the email:
+		            mail('madams@techconnectionoflongbeach.com', "Subject: {$_POST['subject']}", $body, "From: {$_POST['email']}");
+
+		            // Print a message:
+		            echo '<p><em>Thank you for your input. We will reply as we can.</em></p>';
+		
+		            // Clear $_POST (so that the form's not sticky):
+		            $_POST = array();
+	
+	            } 
+	            else
+	            {
+		            echo '<p class="error">Please fill out the form completely.</p>';
+	            }
+	
+            } // End of main isset() IF.
+
+        // Create the HTML form:
+        ?>
+        <form action="TCCU.php" method="post">
+	        <p>Name: 
+	        <br />
+	        <input class="input_field" type="text" name="name" size="30" maxlength="60" value="<?php if (isset($_POST['name'])) echo $_POST['name']; ?>" /></p>
+	        <p>Email Address:
+	        <br />
+	        <input class="input_field" type="text" name="email" size="30" maxlength="80" value="<?php if (isset($_POST['email'])) echo $_POST['email']; ?>" /></p>
+	        <p>Subject:
+	        <br/>
+	        <input class="input_field" type="text" name="subject" size="30" maxlength="80" value="<?php if(isset($_POST['subject'])) echo $_POST['subject']; ?>" /></p>
+	        <p>Comments:
+	        <br />
+	        <textarea class="textarea" name="comments" rows="5" cols="30"><?php if (isset($_POST['comments'])) echo $_POST['comments']; ?></textarea></p>
+	        <p><input class="submit_button" type="submit" name="submit" value="Send" /></p>
+        </form>
+        <div id="map">
+            <iframe  width="300" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=6115-A+Orange+Ave.+Long+Beach,+Ca.+90805&amp;sll=33.865949,-118.177338&amp;ie=UTF8&amp;hq=&amp;hnear=6115+Orange+Ave,+Long+Beach,+California+90805&amp;t=m&amp;ll=33.865926,-118.177357&amp;spn=0.021381,0.025749&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe>
+            <br />
+            <small>
+                <a href="https://maps.google.com/maps?q=6115-A+Orange+Ave.+Long+Beach,+Ca.+90805&amp;sll=33.865949,-118.177338&amp;ie=UTF8&amp;hq=&amp;hnear=6115+Orange+Ave,+Long+Beach,+California+90805&amp;t=m&amp;ll=33.865926,-118.177357&amp;spn=0.021381,0.025749&amp;z=14&amp;iwloc=A&amp;source=embed" style="color:#2C3846;text-align:left">View Larger Map</a>
+            </small>
+            <br />
+            <img id="portrait" width="260px" src="http://techconnectionoflongbeach.com/images/Marian.jpg">
+            <p id="portraitTxt">Founder / CEO: Marian Adams</p>
+        </div>
+    <!----- End of Content/Start of Footer ------>
+    </div>
+    <div id="footer">
+        <table width="1240px">
+            <td><p>Tech Connection of Long Beach 6115-A Orange Ave. Long Beach, Ca. 90805</p></td>
+            <td style="text-align:right;"><p>Bus: (562)984-7856 Cell: (562)552-3243</p></td>
+        </table>
+    </div>
+</body>
+</html>
