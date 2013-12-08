@@ -1,0 +1,74 @@
+<?php
+ob_start();
+session_start();
+?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>Isshinryu karate</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title><?php echo $page_title; ?></title>
+	<base href="http://localhost/47924/aw2274434/siteredesignV3/index.php" target="_parent"/>
+	<link rel="stylesheet" href="inc/style/index.css" />
+	<!--	<link rel="stylesheet" media="only screen and (max-width: 400px)" href="inc/style/mobile.css" />
+	<link rel="stylesheet" media="screen, handheld, print, projection" href="inc/style/mobile.css" />-->
+</head>
+<body>
+<div id="head_container">
+ <h1 id="page_title">Isshinryu karate</h1>
+ <img id="logo" src="inc/img/fistsbeige8.png" alt="" />
+</div>
+
+
+<div id="body_container">
+  <a class="tab01" id="tabs" href="index.php" tabindex="1">&nbsp; Home &nbsp;</a>
+  <a class="tab02" id="tabs" href="about.php" tabindex="2">About the <br />Dojo</a>
+  <a class="tab03" id="tabs" href="calendarpage.php" tabindex="3">Events</a>
+  <a class="tab04" id="tabs" href="gallery.php" tabindex="4">Gallery</a>
+  <a class="tab05" id="tabs" href="terms.php" tabindex="5">Terminology</a>
+  <a class="tab06" id="tabs" href="contact_form.php" tabindex="6">Contact</a>
+  
+
+
+	<div class="tabcont">
+	
+		<div id="rightbox">
+        <div id="control_panel">
+				<ul id="navlist" >
+      
+				<?php
+				
+		if (isset($_SESSION['user_id'])) {
+		
+			echo 'Welcome, ' . $_SESSION['first_name'] . '!';
+                  
+                echo '<li><a class="navtab"  href="logout.php">Logout</a></li>';
+				echo '<li><a class="navtab"  href="view_users.php">View Users</a></li>';
+				
+					if ($_SESSION['user_level'] == 0){
+						echo '<li><a class="navtab"  href="edit_user.php">Edit Info</a></li>';
+						}
+                 
+					if ($_SESSION['user_level'] == 1) {
+						echo '<li><a class="navtab"  href="calendarpage.php">Add an Event</a></li>';
+						echo '<li><a class="navtab"  href="terms.php">Add a Term</a></li>';
+						} 
+				
+				} else { //Not logged in				
+                echo '<li><a class="navtab"  href="login.php">Login</a></li>';
+				echo '<li><a class="navtab"  href="register.php">Register</a></li>';
+				echo '<li><a class="navtab"  href="forgot_password.php">Retrieve Password</a></li>';
+                 }
+            ?>
+            </ul></div>  
+				
+			For more information and to book your free trial, call: <br />
+			760-568 0961 <br /><br />
+			68225<br />
+			Ramon Road<br />
+			at Whispering Palms<br />
+			Cathedral City<br />
+            
+            
+		</div>
+<div id="leftbox">
