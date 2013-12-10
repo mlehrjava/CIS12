@@ -1,0 +1,260 @@
+/* Common Styles for all pages of Pi's Motel Web site */
+/* Note: Refer to grading sheet for details on each of these sections */
+
+/* CSS Final Project by Deepak Menon	 <----  YOUR NAME HERE */
+
+@font-face {font-family: Raveflire 2.0;
+src: url("fonts/Raveflire 2.0.ttf");
+}
+
+@font-face {font-family: chaparralpro-regular;
+src: url("fonts/chaparralpro-regular.ttf");
+}
+
+
+/* First rule below should probably be left alone. */
+
+header, nav, section, footer, article {     /* leave this alone */
+	display: block;
+}
+
+header {
+			  font-size: 150%;
+}
+
+/* 1. Page Styles: On the "body" you must at least set color, background, margin, padding, font family & size.    
+   ==============  Optionally, you can also set styles on the page wrapper div here if you like.  
+	                But note that you will lose points for any of the above properties that are not set for the body  */
+body {
+	color: white;
+	background: url("Pictures/pi_smiling 2.jpg");
+	background-position: top center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #003D5C;
+	padding: 0px;
+	margin: 0px;
+	font-family: chaparralpro-regular;
+	font-size: 120%;
+	
+}
+
+ #pagewrap {	              
+ 	 margin-top: 20%;
+ 	 padding: 15px 15px 0 15px;
+     width: 60%;
+     margin-left: auto;
+     margin-right: auto;
+     background: tan;
+ }
+
+
+/* 2. Heading Styles: For h1-h3 together, set font-family and color; for each separately set font-size using em or %.   
+   =================  Set other styles as needed. Goal is to make heading text stand out from other page text.   
+	                   One of your heading fonts must be an embedded Web font, so include those style rules here.  */
+h1,h2,h3 {
+ 		  font-family:Raveflire 2.0;
+ 		  color: #000;
+			
+}
+
+h1 {
+ font-size: 110%;
+}
+
+h2 {
+ font-size: 100%;
+}
+
+h3 {
+ font-size: 90%;
+}
+
+
+
+
+/* 3. Intro Paragraph Styles:  use at least 3 properties to emphasize 1st paragraph (intro article) 
+   ==========================   */
+
+article#intro { 
+	color: black;
+	clear: both;
+	float: left;
+	border: 1px solid #000;
+	padding: 10px;
+	text-transform: capitalize;
+}
+
+/* 4. Copyright Styles:  use at least 3 properties to de-emphasize the copyright paragraph (footer)  
+   ===================  */
+
+footer{
+	 color: #000;
+	 font-size: 80%;
+   	 margin: 10px 0 5px 0;
+   	 padding: 5px;
+     line-height: 5px;
+     text-align: center;
+     
+}
+
+
+/* 5. General Link Styles: Style the links outside the nav bar area using at least color and text-decoration  
+   ======================  Write 4 separate rules to affect all 4 link states.  */
+
+a:link {
+color: black;
+text-decoration: none;
+} 
+
+a:visited {
+color: black;
+text-decoration: none;
+
+}
+
+a:hover {
+background-color: white;
+text-decoration: none;
+}
+
+a:active  {
+color: white;
+background-color: white;
+text-decoration: none;
+}
+
+
+
+/* 6. Navigation Bar Styles: Should affect only the nav bar links. Style nav, ul and its li's as needed.           
+   ========================  Style all 4 link states to make active buttons when hovering. Remove bullets from list display. 
+                             Use selectors like "#eventspage #eventslink" to style the link to its own page separately      */ 
+
+
+nav ul li {
+			list-style: none;
+			float: left;
+			width: 150px;
+			}
+			
+nav ul li a {
+	background-color: white;
+	text-decoration: none;
+	display: block;
+	border-left: 1px solid #333300;
+	text-align: center;
+	}
+	
+nav ul li a:link {
+
+} 
+
+nav ul li a:visited {
+color: black;
+text-decoration: none;
+
+}
+
+nav ul li a:hover {
+background-color: black;
+text-decoration: none;
+}
+
+nav ul li a:active  {
+color: white;
+background-color: white;
+text-decoration: none;
+}
+
+ul {
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+
+
+/* 7. General List Styles: For unordered lists outside of nav bar. Set 2 levels of bullet shapes & 2 levels of bullet images. 
+   ======================  Outer bullets should stand out more than inner bullets. Use Reservations & Contact pages to test. */
+
+ #primary ul li {
+ 	list-style-image: url("Pictures/happy.jpg");
+ }
+
+
+
+/* 8. Testimonial Styles: At least 4 rules to style at least these 4 items: the surrounding testimonials article,    
+   =====================  the 3 testimonial divs, the quotes, and the speakers. Goals: Uniquely style testimonial section 
+	                       itself, emphasize quote, de-emphasize speaker name. Adjust vertical spacing between items.       */
+#testimonials {
+	border-left: 1px solid #000;
+}
+
+h3.headingtext {
+	text-align:center;
+}
+
+.quote {
+ line-height: 2px;
+ color: brown;
+ padding-left: 20px;
+}
+
+.speaker {
+	text-align:right;
+	
+}
+
+
+
+/* 9. Logo Positioning Styles: Absolute Positioning of logo image using "positionme" id. Leave the existing blank div at 
+   ==========================  bottom of each page in the html & style it to go toward the top of pages where you like.  
+	                            Give it a height & width to match logo image, set image as background, position absolutely */
+
+#positionme {
+			background-image: url("Pictures/Pi_logo3.jpg");
+			
+			background-repeat: no-repeat;
+			position: absolute;
+			left:25%;
+			top:0;
+			width: 600px;
+			height: 600px;
+			
+}
+			
+
+
+
+
+/* 10. Multi-Column Layout Styles: Use of float, position, margin, and/or padding styles to create a multi-column layout.  
+   ==============================  For help with these styles, see the online "Final Project Layout Guide" handout.     
+	                                For some partial credit here you can use just the layout styles from A3P5              */
+
+#testimonials {
+				position: relative;
+				width: 500px;
+				left: 80%;
+				top: 100px;
+}
+
+
+
+
+/* 11. CSS3 Styles: Use of any CSS3 based properties, such as text and box shadows, rounded boxes, etc. See the final  
+   ===============  project assignment directions for links to CSS3 resources, including CSS3 code generators.
+                    The rules given in this section should not be copies of rules appearing in other sections. 
+						  Put only CSS 3 styles here, no other CSS styles should be here -- so if you are putting a text-shadow 
+						  on h1 headings, put just the shadow code here & the other font related CSS code in "headings" area.   
+						  Note: @font-face properties don't go here -- place them in the sections where the fonts are used.  
+						  Do not include any -webkit or -moz based browser properties.                                         */
+
+
+
+
+
+
+/* Miscellaneous Styles: Styles that don't fit in any of the above categories but affect multiple pages can go here. 
+   ====================  Use only as needed. This section is optional and does not count for any points.                 */
+

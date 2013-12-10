@@ -1,0 +1,6 @@
+cis14a.net
+
+209.129.8.3
+
+username: 47925
+password: 47925cis14a
