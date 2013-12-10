@@ -1,0 +1,97 @@
+*	{
+margin:0;
+	}
+html	{
+	background-image:url(../img/houses.png);
+	background-repeat:repeat;
+	
+	}						
+h1	{
+text-shadow: 3px 2px 3px rgba(36, 36, 36, 1);
+	} 
+a:link,
+a:active,
+a:focus,
+a:visited	{
+color:#000;
+text-decoration:none;
+outline:none;
+}
+a:hover	{
+	color:#000;
+	text-decoration:underline;
+	outline:none;
+}
+body	{
+	position:fixed;
+	left:25%;
+	font-size:100%;
+	background-image:url(../img/transbeige.png);
+	width:46%;
+	margin: 1% auto;
+	padding:2%;
+	min-height: 80%;
+	max-height: 80%;
+	height: auto !important;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+	}
+
+
+	
+#head_container	{
+width:100%;
+position:relative;
+display:block;
+text-align:center;
+padding:2%;
+max-height:20%;
+}
+
+.links,
+.userlinks	{
+text-decoration:none;
+padding:0 2%;
+}
+
+#body_container	{
+padding:0 2% 2% 2%;
+position:fixed;
+width:42%;
+overflow-y:scroll;
+height:60%;
+}
+
+#push	{
+height:1%;
+}
+
+#foot_container,
+#push	{
+clear:both;
+
+}
+	
+#foot_container	{			/*height is 5% of total page*/
+position:fixed;
+left:25%;
+bottom:0;
+text-shadow: 3px 2px 3px rgba(36, 36, 36, 1);
+width:50%;
+text-align:center;
+font-size:100%;
+border-top-left-radius: 30px;
+border-top-right-radius: 30px;
+background-image:url(../img/transbeige.png);
+min-height:4%;
+max-height:4%;
+margin: 0 auto;
+overflow:hidden;
+}
+#foot_text	{
+padding:0.75%;
+}
+
+

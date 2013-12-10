@@ -1,0 +1,18 @@
+?>
+</div><!--id=body_container-->
+</div><!--id=mainbox-->
+</div><!--id=body-->
+<div id="push"></div><!--id=push-->
+
+
+<div id="foot_container">
+
+<?php
+$time = time () ;
+$year= date("Y",$time); 
+echo '<span id="foot_text">Copyright © 2012 - $year Allison Woods. All rights reserved.</span>';
+?>
+</div>
+
+</body>
+</html>
