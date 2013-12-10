@@ -1,5 +1,6 @@
-			<?php
-	
+	<?php
+	ob_start();
+	session_start();
 	require ('inc/config.inc.php');
 	$page_title = 'Event Calendar';
 	include ('inc/header.html');

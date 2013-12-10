@@ -1,5 +1,7 @@
 	<?php
-		require ('inc/config.inc.php');
+	ob_start();
+	session_start();
+	require ('inc/config.inc.php');
 	$page_title = 'Terminology&nbsp|&nbspStrikes and Punches';
 	include ('inc/header.html');
 	?>

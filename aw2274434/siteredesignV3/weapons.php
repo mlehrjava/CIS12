@@ -1,4 +1,6 @@
 	<?php
+	ob_start();
+	session_start();
 	require ('inc/config.inc.php');
 	$page_title = 'Terminology&nbsp|&nbspWeapons';
 	include ('inc/header.html');

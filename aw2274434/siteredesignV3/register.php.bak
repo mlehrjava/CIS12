@@ -1,5 +1,4 @@
 	<?php
-	ob_start();
 	session_start();
 	require ('inc/config.inc.php');
 	$page_title = 'Registration';
@@ -19,7 +18,8 @@ div#body_container>a.tab01 {
 				<?php
 				
 
-
+				
+				
 				if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 					
 					

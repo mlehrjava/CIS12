@@ -1,9 +1,10 @@
-<?php # Script 18.10 - forgot_password.php
-// This page allows a user to reset their password, if forgotten.
-require ('inc/config.inc.php'); 
-$page_title = 'Forgot Your Password';
-include ('inc/header.html');
-?>
+	<?php
+	ob_start();
+	session_start();
+	require ('inc/config.inc.php');
+	$page_title = 'Forgot Your Password';
+	include ('inc/header.html');
+	?>
 
 
 

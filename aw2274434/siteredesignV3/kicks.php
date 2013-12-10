@@ -1,4 +1,6 @@
-		<?php
+	<?php
+	ob_start();
+	session_start();
 	require ('inc/config.inc.php');
 	$page_title = 'Terminology&nbsp|&nbspKicks and Foot Techniques';
 	include ('inc/header.html');
