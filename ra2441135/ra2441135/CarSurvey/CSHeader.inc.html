@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<header>
+    <title><?php echo $page_title; ?></title>
+    <link type="text/css" href="stylesheet.css" rel="stylesheet"/>
+</header>
+<body>
+    <!------  Start of Header  ---------->
+    <div id="header">
+        <table id="headertable">
+            <td>
+                <a class="headerlink" href="CSHome.php"><img  id="logo" src="images/CarSurveyLogo.png"></a>
+            </td>
+            <td class="Navbar">
+                <?php
+                    if(isset($_SESSION['userID']))
+                    {
+
+                        echo '<button id="button" style="font-size:12px;vertical-align:-3px;" type="button" onclick="location.href=\'CSChangePassword.php\';">Change Password</button>';
+
+                        if (($_SESSION['userID'] == 2) && ($_SESSION['FirstName'] == 'Ricky'))
+                        {
+                            echo '<button id="button" type="button" onclick="location.href=\'admin/CSLoU.php\';">Users</button>';
+                        }
+                    }
+                    else
+                    {
+                        echo '';
+                    }
+                ?>
+                <button id="button" type="button" onclick="location.href='CSRegister.php';">Register</button>
+                <?php // Create a login/logout link:
+            //If Logging In Using Cookies:
+            //if ( (isset($_COOKIE['userID'])) && (basename($_SERVER['PHP_SELF']) != 'IssKarLogout.php') )
+            //If Logging In Using Sessions:
+                $a = "'CSLogout.php'";
+                $b = "'CSLogin.php'";
+            if (isset($_SESSION['userID']))
+            {
+                echo '<button id="button" type="button" onclick="location.href=' . $a . ';">Log Out</button>';
+            }
+            else
+            {
+                echo '<button id="button" type="button" onclick="location.href=' . $b . ';">Log In</button>';
+            }
+        ?>                   
+            </td>
+        </table>
+    </div>
+     <!----- End of Header/Start of Content ------>

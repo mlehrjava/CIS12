@@ -1,0 +1,54 @@
+<!--------- End of Header/Begin Navbar ---------->
+    
+    <div class="left">
+        <ul>
+            <li><a class="linkbar" href="IssKarSSaP.php">School Schedule and Price</a></li>
+            <br />
+            <li><a class="linkbar" href="IssKarSU.php">Sign Up!</a></li>
+            <br />
+            <li><a class="linkbar" href="IssKarCA.php">Create Account</a></li>
+	       <br />
+	       <li><a class="linkbar" href="IssKarNE.php">News and Events</a></li>
+            <br />
+            <li><a class="linkbar" href="IssKarBT.php">Belt Testing</a></li>
+            <br />
+            <li><a class="linkbar" href="IssKarAU.php">About Us</a></li>
+            <br />
+            <li><a class="linkbar" href="IssKarSB.php">Sensei's Biography</a></li>
+            <br />
+            <li><a class="linkbar" href="IssKarAH.php">Sensei's Awards and Honors</a></li>
+            <br />
+            <li><a class="linkbar" href="IssKarBB.php">Active, Regularly Attending Black Belts</a></li>
+            <br />
+            <li><a class="linkbar" href="IssKarT.php">Terminology</a></li>
+            <?php   if(isset($_SESSION['userID']))
+                    {
+                        echo '<hr />
+                        <p class="linkbar"><b><i>USERS ONLY</i></b></p>
+                        <hr />
+                        <li><a class="linkbar" href="IssKarChangePassword.php">Change Password</a></li>';
+                        
+                        if (($_SESSION['userID'] == 1) && ($_SESSION['FirstName'] == 'Ricky'))
+                        {
+                            echo '<hr />
+                            <p class="adminlinkbar"><b><i>ADMINS ONLY</i></b></p>
+                            <hr />
+                            <li><a class="adminlinkbar" href="admin/IssKarLoU.php">List of Users</a></li>
+                            <br />
+                            <li><a class="adminlinkbar" href="admin/IssKarT.php">Modify Terms</a></li>';
+                        }
+                    }
+                    else
+                    {
+                        echo '';
+                    }
+            ?>
+        </ul>
+    </div>
+    
+<!--------- End of Navbar/Begin BGimg ---------->
+    
+    <div class="right" id="background"></div>
+    <div class="right">
+
+<!--------- End of BGimg/Begin Content ---------->

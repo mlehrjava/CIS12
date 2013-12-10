@@ -1,0 +1,280 @@
+/*colors #43c7f4 #00adef #abe0f9*/
+html
+{
+    width:1240px;
+    background-color:#EEEFF0;
+}
+h1
+{
+    font-weight:bold;
+}
+h2
+{
+    font-weight:bold;
+}
+#header
+{
+    margin-top:-8px;
+    width:1240px;
+    height:30px;
+    font-family:Arial, sans-serif; 
+}
+#header img
+{
+    margin-left:-12px;
+}
+#headertable
+{
+    width:1240px;
+    background-color:#2C3846;
+    vertical-align:-20px;
+}
+.headerlink
+{
+    border-left:2px solid #EEEFF0;
+    color:#EEEFF0;
+    text-decoration:none;
+    margin:0px 5px 0px 5px;
+    padding:5px;
+}
+.headerlink:hover
+{
+    font-weight:bold;
+}
+.Logo
+{
+    float:left;
+    text-decoration:none;
+    background-color:#2C3846;
+}
+.Navbar
+{
+    float:right;
+    background-color:#2C3846;
+    text-decoration:none;
+    margin:0px 5px 0px 5px;
+}
+#banner
+{
+    height:250px;
+    width:1220px;
+    margin-top:-21px;
+    font-family:Arial,sans-serif;
+}
+#banner img
+{
+    margin-left:41px;
+    margin-right:auto;
+    position:absolute;
+    margin-top:4px;
+}
+#bannertxt
+{
+    width:320px;
+    position:relative;
+    background-color:rgba(0,0,0,.2);
+    color:#EEEFF0;
+    padding-left:30px;
+    padding-right:px;
+    border-radius:60px;
+    margin-left:150px;
+    margin-top:;
+}
+a 
+{
+    text-decoration:none;
+}
+#gobutton
+{
+    height:60px;
+    width:60px;
+    background-color:#D2573C;
+    text-align:center;
+    border-radius:50px;
+    position:relative;
+    margin: -41px 0px 0px 375px;
+    text-decoration:none;
+}
+#gobutton p
+{
+    padding-top:9px;
+    color:#EEEFF0;
+    font-weight:bold;
+    
+}
+#gobutton span
+{
+    font-size:30px;
+    vertical-align:-4px;
+    
+}
+a #gobutton p:hover
+{
+    color:#2C3846;
+}
+#content
+{
+    
+    position:relative;
+    height:auto;
+    width:1200px;
+    background-color:#D5E0EC;
+    font-family:Arial,sans-serif;
+    color:#2C3846;
+    padding:20px;
+}
+#content p em
+{
+    font-weight:bold;
+    font-size:36px;
+    color:#17ACCA;
+}
+#footer
+{
+    height:40px;
+    width:1240px;
+    background-color:#2C3846;
+    color:#EEEFF0;
+    font-family:Arial,sans-serif;
+    font-size:14px;
+}
+#footer table
+{
+    width:1240px;
+}
+#footer p
+{
+    margin-top:10px;
+    margin-right:15px;
+}
+#homeTable td
+{
+    width:260px;
+    text-align:justify;
+    margin-left:10px;
+    margin-right:10px;
+}
+#homeTable td p
+{
+    margin-left:10px;
+    margin-right:10px;
+}
+#csTable td
+{
+    padding-left:10px;
+    padding-right:10px;
+    width:260px;
+    text-align:justify;
+    margin-left:10px;
+    margin-right:10px;
+}
+#csTable td p
+{
+    margin-left:10px;
+    margin-right:10px;
+}
+#basicsTable
+{
+    width:1220px;
+}
+#basicsTable td
+{
+    padding-right:50px;
+    text-align:justify;
+    margin-left:10px;
+    margin-right:10px;
+    font-size:18px;
+}
+#basicsTable td p
+{
+    margin-left:10px;
+    margin-right:10px;
+}
+#basicsimgTable td
+{
+    padding-right:50px;
+    text-align:justify;
+    margin-left:10px;
+    margin-right:10px;
+}
+#basicsimgTable td p
+{
+    margin-left:10px;
+    margin-right:10px;
+}
+#tsTable td
+{
+    padding-right:50px;
+    text-align:justify;
+    margin-left:10px;
+    margin-right:10px;
+}
+#tsTable td p
+{
+    margin-left:10px;
+    margin-right:10px;
+}
+
+#map
+{
+    left:800px;
+    bottom:835px;
+    position:relative;
+    text-decoration:none;
+}
+#map a
+{
+    right:2000px;
+    
+}
+#map a:hover
+{
+    font-weight:bold;
+}
+.input_field
+{
+    background: url(http://mlwebco.com/website-design-training/images/bg_textfield.png)no-repeat;
+    font-size: 32px; 
+    color: #2C3846; 
+    width: 415px;
+    height: 40px;
+    border: none;
+    padding-left:5px;
+    margin: 5px 0 15px 0;
+}
+.submit_button
+{
+    width:200px;
+    height:40px;
+    font-size:30px;
+    border-radius:10px;
+    background-color:#2C3846;
+    color:#EEEFF0;
+    text-align:center;
+}
+.textarea 
+{
+    background: url("http://mlwebco.com/website-design-training/images/bg_textarea.png")no-repeat scroll 0% 0% transparent;
+    font-size: 14px;
+    color: #2C3846;
+    width: 410px;
+    height: 151px;
+    border: medium none;
+    padding: 5px;
+    margin: 5px 0px 15px;
+}
+#portrait
+{
+    margin-top:50px;
+}
+#portraitTxt
+{
+    font-weight:bold;
+    font-size:18px;
+}
+.error
+{
+    color:#fe3801;
+    font-size:14px;
+    vertical-align:text-top;
+}
