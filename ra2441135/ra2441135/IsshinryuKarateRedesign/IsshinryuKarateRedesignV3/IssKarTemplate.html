@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="stylesheet.css">
+    <title><?php echo $page_title; ?></title>
+    <style>
+        #background
+        {
+            background-image:url("http://www.sfisshinryu.com/wp-content/themes/smallbiz/images/HomeImage.jpg"); <?php echo $bgImg; ?>);
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img id="titleImg1" src="http://isshinryu-karate.com/images/0ee079d2df5c99036753aff72348ba5b_a9hq.jpg" />
+        <marquee width="750" height="73" align="bottom" loop="65" scrollamount="10">Welcome to our <span style=color:#ff0000;>Dojo</span> in Cathedral City California ---- Sensei Sandubrae ---- Sensei McConnell ---- Sensei Tweedie  ---- Sensei Doster ---- Mr Kendel ---- Mr Manger ---- Mr G Petersen ---- Mr M Peterson ---- Mr Caballero ---- Mr Mota ---- </marquee>
+        <a href="IssKarSU.php"><img id="signupImg"src="https://www.tabsite.com/i/button_sign_up_now.jpg" /></a>
+        <?php // Create a login/logout link:
+            //If Logging In Using Cookies:
+            //if ( (isset($_COOKIE['userID'])) && (basename($_SERVER['PHP_SELF']) != 'IssKarLogout.php') )
+            //If Logging In Using Sessions:
+            if (isset($_SESSION['userID']))
+            {
+	            echo '<a class="signin" href="IssKarLogout.php">Sign Out</a>';
+            }
+            else
+            {
+	            echo '<a class="signin" href="IssKarLogin.php">Sign In</a>';
+            }
+        ?>
+        <img id="titleImg2" src="http://isshinryu-karate.com/images/0ee079d2df5c99036753aff72348ba5b_a9hq.jpg" />
+    </div>
+    <!-- End of header/Start of Navbar -->
+<!--------- End of Header/Begin Navbar ---------->
+    
+    <div class="left">
+        <ul>
+            <li><a class="linkbar" href="IssKarSSaP.php">School Schedule and Price</a></li>
+            <br />
+            <li><a class="linkbar" href="IssKarSU.php">Sign Up!</a></li>
+            <br />
+            <li><a class="linkbar" href="IssKarCA.php">Create Account</a></li>
+            <br />
+            <li><a class="linkbar" href="IssKarBT.php">Belt Testing</a></li>
+            <br />
+            <li><a class="linkbar" href="IssKarAU.php">About Us</a></li>
+            <br />
+            <li><a class="linkbar" href="IssKarSB.php">Sensei's Biography</a></li>
+            <br />
+            <li><a class="linkbar" href="IssKarAH.php">Sensei's Awards and 
+
+Honors</a></li>
+            <br />
+            <li><a class="linkbar" href="IssKarBB.php">Active, Regularly Attending 
+
+Black Belts</a></li>
+            <br />
+            <li><a class="linkbar" href="IssKarT.php">Terminology</a></li>
+        </ul>
+    </div>
+    
+<!--------- End of Navbar/Begin BGimg ---------->
+    
+    <div class="right" id="background"></div>
+    <div class="right">
+
+<!--------- End of BGimg/Begin Content ---------->
+
+
+<!--------- End of Content/Begin Footer ---------->
+
+    </div>
+
+
+    <div id="footer">
+        <p id="contact">Contact us! Call 760-568 0961 We are located at <a id=location 
+
+href=https://maps.google.com/maps?client=firefox-a&q=68225+ramon+rd.+cathedral
+
++city&ie=UTF-8&ei=z8ZbUoKmNOWTiAKvmICQDw&ved=0CAgQ_AUoAg>68225 Ramon Rd. Cathedral 
+
+City, Ca.</a></p>
+    </div>
+</body>
+</html>

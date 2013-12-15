@@ -1,0 +1,267 @@
+/* Color Palette: #D2D9B1 #EAEFDC #515945 #9AB270 #AFC388 */
+html
+{
+    background-color:#D2D9B1;
+    color:#EAEFDC;
+    width:1260px;
+    font-family:Arial, sans-serif;
+}
+#header
+{
+    width:1260px;
+    background-color:#515945;
+    text-align:right;
+    height:60px;
+    border-radius:20px;
+}
+#headertable
+{
+    width:1260px;
+    height:60px;
+    font-size:20px;
+}
+#logo
+{
+    height:50px;
+    border-radius:18px;
+    float:left;
+}
+#button
+{
+    width:120px;
+    height:40px;
+    color:#EAEFDC;
+    background-color:#AFC388;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+    font-size:24px;
+    margin:0 10px 0 10px;
+}
+#button:hover
+{
+    color:#515945;
+}
+#content
+{
+    width:1240px;
+    border-radius:20px;
+    background-color:#9AB270;
+    margin-top:20px;
+    margin-bottom:20px;
+    padding:10px;
+    padding-bottom:80px;
+}
+#banner
+{
+    width:1240px;
+    margin-top:20px;
+    margin-bottom:20;
+}
+#banner a
+{
+    border-radius:20px;
+    top:20px;
+    padding:50px;
+    left:200px;
+    position:relative;
+    
+}
+#banner img
+{
+    border-radius:20px;
+}
+#banner a img:hover
+{
+    
+}
+#banner tr
+{
+    width:1260px;
+    height:400px;
+}
+#bannerTxt1
+{
+    width:450px;
+    border-radius:20px;
+    float:left;
+    font-size:34px;
+    margin:px;
+    padding:10px;
+    text-align:center;
+    background-color:#515945;
+}
+#bannerImg1
+{
+    width:705px;
+    float:right;
+    margin-right:8px;
+}
+#bannerTxt2
+{
+    width:450px;
+    border-radius:20px;
+    float:right;
+    font-size:34px;
+    margin-top:20px;
+    padding:10px;
+    text-align:center;
+    background-color:#515945;
+}
+#bannerImg2
+{
+    width:720px;
+    float:left;
+    margin-top:20px;
+}
+#bannerTxt3
+{
+    width:450px;
+    border-radius:20px;
+    font-size:34px;
+    padding:10px;
+    float:left;
+    text-align:center;
+    background-color:#515945;
+    clear:left;
+    margin-top:20px;
+    
+}
+#bannerImg3
+{
+    margin-top:20px;
+    width:640px;
+    float:right;
+}
+#gobutton
+{
+    
+    margin-top:-200px;
+    margin-right:500px;
+}
+#content form p
+{
+    font-size:30px;
+}
+.input_field
+{
+    background: url(http://mlwebco.com/website-design-training/images/bg_textfield.png)no-repeat;
+    font-size: 32px; 
+    color: #515945; 
+    width: 415px;
+    height:40px;
+    border: none;
+    padding-left:5px;
+    margin: 5px 0 15px 0;
+}
+.submit_button
+{
+    width:200px;
+    height:40px;
+    font-size:30px;
+    border-radius:10px;
+    background-color:#515945;
+    color:#e8e5c4;
+    text-align:center;
+    cursor:pointer;
+}
+.submit_button:hover
+{
+    color:#AFC388;
+}
+.NextButton
+{
+    width:250px;
+    height:40px;
+    font-size:30px;
+    border-radius:10px;
+    background-color:#515945;
+    color:#e8e5c4;
+    text-align:center;
+    cursor:pointer;
+}
+.NextButton:hover
+{
+    color:#AFC388;
+}
+.error
+{
+    color:#ff0A11;
+    font-weight:bold;
+}
+.createaccount
+{
+    text-decoration:none;
+    background-color:#515945;
+    color:#EAEFDC;
+    border-radius:5px;
+    padding:3px;
+}
+#favTxt
+{
+    width:150px;
+    /*border-left:transparent solid 80px;
+    border-right:transparent solid 80px;*/
+}
+#favTxt span
+{
+    border-radius:3px;
+    padding:3px;
+}
+#favImg
+{
+    width:320px;
+    border-right:transparent solid 150px;
+}
+#favImg p
+{
+    font-weight:bold;
+    font-size:60px;
+}
+#favTable td
+{
+    padding-top:50px;
+}
+#favTable img
+{
+    /*margin-left:50px;*/
+    border-radius:20px;
+}
+#picBar img
+{
+    border-radius:20px;
+    margin:10px;
+}
+#dreamcar input
+{
+    
+}
+.PagenateLink
+{
+    color:#EAEFDC;
+    text-decoration:none;
+    font-family:Arial,sans-serif;
+            
+}
+    .PagenateLink:hover
+{
+    font-weight:bold;
+}
+    .sortLink
+{
+    color:#EAEFDC;
+    text-decoration:none;
+}
+    .sortLink:hover
+{
+    font-size:18px;
+}
+#footer
+{
+    width:1260px;
+    background-color:#515945;
+    text-align:right;
+    height:20px;
+    border-radius:20px;
+    clear:both;
+}
