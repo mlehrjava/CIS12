@@ -1,9 +1,9 @@
-	<?php
-	ob_start();
-	session_start();
-	require ('inc/config.inc.php');
-	$page_title = 'Delete Event';
-	include ('inc/header.html');
+<?php
+ob_start();
+session_start();
+require ('inc/config.inc.php');
+$page_title = 'Delete Event';
+include ('inc/header.html');
 	?>
 	<style>
 div#body_container>a.tab01 {

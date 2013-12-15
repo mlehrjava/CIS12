@@ -1,7 +1,7 @@
-	<?php
-	session_start();
-	include ('inc/header.html');
-	?>
+<?php
+session_start();
+include ('inc/header.html');
+?>
 	<!---------------------------------------------->
     
     <h3 class="tabtitle">Homework</h3>

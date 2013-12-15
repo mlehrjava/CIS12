@@ -1,9 +1,9 @@
-	<?php
-	ob_start();
-	session_start();
-	require ('inc/config.inc.php');
-	include ('inc/header.html');
-	?>
+<?php
+ob_start();
+session_start();
+require ('inc/config.inc.php');
+include ('inc/header.html');
+?>
 	<style>
 	.iframe	{
 	display:inline-block;
@@ -17,7 +17,9 @@
 
     <iframe class="iframe" width="560" height="315" src="//www.youtube.com/embed/videoseries?list=PLt3GnIC32vebZghOdeUgMqRB5XNC_4sgf" frameborder="0" allowfullscreen></iframe>
     <!-- start slipsum code -->
-
+	<?php
+	include ('inc/ipsum.php')
+	?>
 
     
     <!---------------------------------------------->

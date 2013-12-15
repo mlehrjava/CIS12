@@ -5,24 +5,16 @@ Allison Woods
 
 
 html	{
-	background: rgb(220, 220, 220);
-	/*background: rgb(20, 20, 20);*/
-
 height:auto;	
+
 }						
 body	{
-font:100% Georgia, serif;
-position:fixed;
-background: rgb(220, 220, 220);
-background: -moz-linear-gradient(90deg, rgba(20, 20, 20, 31) 0%, rgba(220, 220, 220, 0) 200%);
-background: -webkit-linear-gradient(90deg, rgba(20, 20, 20, 31) 0%, rgba(220, 220, 220, 0) 200%);
-background: -o-linear-gradient(90deg, rgba(20, 20, 20, 31) 0%, rgba(220, 220, 220, 0) 200%);
-background: -ms-linear-gradient(90deg, rgba(20, 20, 20, 31) 0%, rgba(220, 220, 220, 0) 200%);
-background: linear-gradient(180deg, rgba(20, 20, 20, 31) 0%, rgba(220, 220, 220, 0) 200%);
+background-color: rgb(220, 220, 220);
+background: linear-gradient(180deg, rgba(20, 20, 20, 31) 0%, rgba(20, 20, 20, 31) 80px, rgba(220, 220, 220, 0) 5000px) no-repeat;
+	font:100% Georgia, serif;
 	margin:0 auto;
-	height:100%;
-	width:100%;
-	
+	width:auto;
+	height:auto;
 	}
 	
 a:link,
@@ -39,36 +31,46 @@ a:hover	{
 	outline:none;
 }
 
+#body_container	{
+position:relative;
+text-align:justify;
+width:100%;
+min-height:800px;
+height:auto;
+
+}
 
 #head_container	{
 display:block;
 position:fixed;
+background: linear-gradient(180deg, rgb(100, 100, 100) 0px, rgb(140, 140, 140) 25px, rgb(140, 140, 140) 30px, rgb(20, 20, 20) 80px);
+background-size:auto 80px;
 margin:0 auto;
-z-index:100;
+z-index:1;
 width:100%;
-text-align:center;
+text-align:left;
 line-height:4;
 font-weight:bold;
 font-size:1.2em;
+height:80px;
 }
 
 #logo	{
 display:block;
 position:absolute;
+z-index:2;
+top:0;
 width:250px;
-top:5px;
-
-z-index:150;
 }
 
 #mav	{
+display:block;
+position:absolute;
 line-height:1.2em;
 font-size:.8em;
 color:#fff;
-display:block;
-position:absolute;
-right:50px;
-z-index:150;
+left:1000px;
+z-index:2;
 font-style:italic;
 }
 #mavimg	{
@@ -78,10 +80,10 @@ height:50px;
 .nav	{
 display:block;
 position:absolute;
+left:250px;
 width:100%;
-z-index:100;
-background:url(../img/greyban.png) repeat-x center;
-background-size:auto 80px;
+z-index:1;
+
 height:80px;
 }
 
@@ -98,22 +100,14 @@ padding: 0 15px;
    
    }
 
-
-
-
-#body_container	{
-position:absolute;
-text-align:justify;
-width:100%;
-height:100%;
-overflow:auto;
-}
-
 #control_panel	{
-background:url(../img/transwhite65.png) repeat center;
+/*background:url(../img/transwhite45.png) repeat center;*/
+background-color:#fff;
+opacity:0.45;
+filter:alpha(opacity=45); /* For IE8 and earlier */
 position:fixed;
 left:25px;
-top:225px;
+top:220px;
 width:200px;
 
 }
@@ -129,14 +123,51 @@ color:#000;
 text-decoration:underline;
 }
 
+
+.adbanner	{
+display:inline-block;
+background-color:#fff;
+opacity:0.45;
+filter:alpha(opacity=45); /* For IE8 and earlier */
+}
+.adbanner#ad1 {
+position:absolute;
+left:1100px;
+top:80px;
+width:120px;
+height:600px;
+}
+.adbanner#ad2 {
+position:absolute;
+left:1100px;
+top:690px;
+width:120px;
+height:90px;
+}
+.adbanner#ad3 {
+position:absolute;
+width:180px;
+height:150px;
+left:10px;
+bottom:-175px;
+}
+
+
 #content	{
 position:relative;
-margin:100px 300px 300px 250px;
-overflow:auto;
+background-color:#fff;
+opacity:0.45;
+filter:alpha(opacity=45); /* For IE8 and earlier */
+min-height:600px;
+max-width:735px;
+left:250px;
+padding:100px 50px 100px 50px;
 }
 
 .table	{
-	position:relative;
+	position:absolute;
+	bottom:0;
+	left:0;
 	background-repeat:repeat-y;
     border-collapse:collapse;
 	border: none;
@@ -144,6 +175,18 @@ overflow:auto;
 	text-align:left;
 	}
 
+#footwrap	{
+position:relative;
+left:250px;
+width:835px;
+text-align:center;
+padding:50px 10px 10px 10px;
+}
+
 #footer	{
+
+position:relative;
+margin:0 auto;
+height:50px;
 
 }

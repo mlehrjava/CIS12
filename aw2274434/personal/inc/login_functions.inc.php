@@ -52,7 +52,7 @@ function check_login($dbc, $username = '', $pass = '') {
 	if (empty($errors)) { // If everything's OK.
 
 		// Retrieve the user_id and first_name for that username/password combination:
-		$q = "SELECT user_id, first_name, user_level FROM aw2274434_karate_users WHERE username='$un' AND pass=SHA1('$p')";		
+		$q = "SELECT user_id, first_name, user_level FROM aw2274434_personal_users WHERE username='$un' AND pass=SHA1('$p')";		
 		$r = @mysqli_query ($dbc, $q); // Run the query.
 		
 		// Check the result:

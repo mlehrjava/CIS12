@@ -1,10 +1,10 @@
-	<?php
-	ob_start();
-	session_start();
-	require ('inc/config.inc.php');
-	$page_title = 'View Users';
-	include ('inc/header.html');
-	?>
+<?php
+ob_start();
+session_start();
+require ('inc/config.inc.php');
+$page_title = 'View Users';
+include ('inc/header.html');
+?>
 	<style>
 div#body_container>a.tab01 {
 	background:url(inc/img/button-hov.png) no-repeat center;
@@ -15,24 +15,24 @@ div#body_container>a.tab01 {
 
 
 <!-------------------------------------View Users------------------------------------->
-			
+
 			<?php
 
 			$page_title = 'View the Current Users';
 			echo '<h1 class="tabtitle">Registered Users</h1>';
-			
+
 			require ('../mysqli_connect.php');
-			
-			
+
+
 			if (isset($_SESSION['user_id'])) {	//IF LOGGED IN
-                  
-               
-                 
-					
-						
-						
-				
-				
+
+
+
+
+
+
+
+
 			$display = 8;
 
 			if (isset($_GET['p']) && is_numeric($_GET['p'])) {
@@ -42,7 +42,7 @@ div#body_container>a.tab01 {
 				$r = @mysqli_query ($dbc, $q);
 				$row = @mysqli_fetch_array ($r, MYSQLI_NUM);
 				$records = $row[0];
-				if ($records > $display) { 
+				if ($records > $display) {
 					$pages = ceil ($records/$display);
 				} else {
 					$pages = 1;
@@ -53,7 +53,7 @@ div#body_container>a.tab01 {
 				} else {
 				$start = 0;
 				}
-				
+
 			$sort = (isset($_GET['sort'])) ? $_GET['sort'] : 'rd';
 			switch ($sort) {
 				case 'ln':
@@ -73,20 +73,20 @@ div#body_container>a.tab01 {
 					$sort = 'rd';
 					break;
 				}
-			
-			
-			
-			
-			
-			$q = "SELECT username, last_name, first_name, DATE_FORMAT(reg_date, '%M %d, %Y') AS dr, user_id FROM aw2274434_karate_users ORDER BY $order_by LIMIT $start, $display";		
+
+
+
+
+
+			$q = "SELECT username, last_name, first_name, DATE_FORMAT(reg_date, '%M %d, %Y') AS dr, user_id FROM aw2274434_karate_users ORDER BY $order_by LIMIT $start, $display";
 			$r = @mysqli_query ($dbc, $q);
-			
-			
-			
-			
-			
-			
-			
+
+
+
+
+
+
+
 			echo '<table class="termtable" >
 				<tr>
 					<td align="center"></td>
@@ -97,7 +97,7 @@ div#body_container>a.tab01 {
 					<td align="left"><h3><a href="view_users.php?sort=rd">Date Registered</a></h3></td>
 				</tr>
 				';
-			//$bg = '#eeeeee'; 
+			//$bg = '#eeeeee';
 			while ($row = mysqli_fetch_array($r, MYSQLI_ASSOC)) {
 				//$bg = ($bg=='#770000');
 				//echo '<tr bgcolor="' . $bg . '">
@@ -119,7 +119,7 @@ div#body_container>a.tab01 {
 			echo '</table>';
 			mysqli_free_result ($r);
 			mysqli_close($dbc);
-			
+
 			if ($pages > 1) {
 				echo '<br /><p>';
 				$current_page = ($start/$display) + 1;
@@ -136,12 +136,12 @@ div#body_container>a.tab01 {
 				if ($current_page != $pages) {
 					echo '<a href="view_users.php?s=' . ($start + $display) . '&p=' . $pages . '&sort=' . $sort . '">Next</a>';
 					}
-				echo '</p>';	
+				echo '</p>';
 				}
-				
-				
-				
-				} else { //IF NOT LOGGED IN			
+
+
+
+				} else { //IF NOT LOGGED IN
               echo 'You are not authorized to view this page. Please log in or register.';
                  }
 			?>

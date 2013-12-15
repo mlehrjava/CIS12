@@ -1,10 +1,10 @@
-	<?php
-	ob_start();
-	session_start();
-	require ('inc/config.inc.php');
-	$page_title = 'Delete User';
-	include ('inc/header.html');
-	?>
+<?php
+ob_start();
+session_start();
+require ('inc/config.inc.php');
+$page_title = 'Delete User';
+include ('inc/header.html');
+?>
 	<style>
 div#body_container>a.tab01 {
 	background:url(inc/img/button-hov.png) no-repeat center;

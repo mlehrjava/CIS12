@@ -1,7 +1,7 @@
-	<?php
-	session_start();
-	include ('inc/header.html');
-	?>
+<?php
+session_start();
+include ('inc/header.html');
+?>
 	<!---------------------------------------------->
     <h2>Surveys</h2>
     <ul>

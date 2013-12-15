@@ -1,10 +1,5 @@
-<?php # Script 12.13 - loggedin.php #3
-// The user is redirected here from login.php.
-
-session_start(); // Start the session.
-
-// If no session value is present, redirect the user:
-// Also validate the HTTP_USER_AGENT!
+<?php 
+session_start(); 
 if (!isset($_SESSION['agent']) OR ($_SESSION['agent'] != md5($_SERVER['HTTP_USER_AGENT']) )) {
 
 	// Need the functions:

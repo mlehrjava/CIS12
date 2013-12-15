@@ -1,25 +1,20 @@
-	<?php
-	ob_start();
-	session_start();
-	require ('inc/config.inc.php');
-	$page_title = 'Delete User';
-	include ('inc/header.html');
-	?>
-	<style>
-div#body_container>a.tab01 {
-	background:url(inc/img/button-hov.png) no-repeat center;
-	}
-</style>
-
-
-
+<?php
+session_start();
+require ('inc/config.inc.php');
+$page_title = 'Registration';
+include ('inc/header.html');
+?>
 
 <!-------------------------------------Delete User------------------------------------->
-		
-		<?php
-		
-		
-		if ($_SESSION['user_level'] == 1) {	//IF ADMIN
+				
+				<?php
+				$page_title = 'Delete User';
+			echo '<h2 class="tabtitle">Registered Users</h1>';
+			
+			
+			
+			
+			if ($_SESSION['user_level'] == 1) {	//IF ADMIN
 		$page_title = 'Delete a User';
 		echo '<h1>Delete a User</h1>';
 		if ( (isset($_GET['id'])) && (is_numeric($_GET['id'])) ) {
@@ -33,7 +28,7 @@ div#body_container>a.tab01 {
 		require ('../mysqli_connect.php');
 		if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			if ($_POST['sure'] == 'Yes') {
-				$q = "DELETE FROM aw2274434_karate_users WHERE user_id=$id LIMIT 1";		
+				$q = "DELETE FROM aw2274434_survey_users WHERE user_id=$id LIMIT 1";		
 				$r = @mysqli_query ($dbc, $q);
 				if (mysqli_affected_rows($dbc) == 1) {
 					echo '<p>The user has been deleted.</p>';	
@@ -45,7 +40,7 @@ div#body_container>a.tab01 {
 				echo '<p>The user has NOT been deleted.</p>';
 				}
 			} else {
-				$q = "SELECT CONCAT(last_name, ', ', first_name) FROM aw2274434_karate_users WHERE user_id=$id";
+				$q = "SELECT CONCAT(last_name, ', ', first_name) FROM aw2274434_survey_users WHERE user_id=$id";
 				$r = @mysqli_query ($dbc, $q);
 				if (mysqli_num_rows($r) == 1) {
 					$row = mysqli_fetch_array ($r, MYSQLI_NUM);
@@ -62,13 +57,13 @@ div#body_container>a.tab01 {
 					}
 				}
 		mysqli_close($dbc);
-		
-		
+			
+			
 			} else { //IF NOT LOGGED IN			
-              echo 'You are not authorized to view this page. Please log in or register.';
-                 }
-		?>
+  echo 'You are not authorized to view this page. Please log in or register.';
+	 }
+?>
 <!---------------------------------------------->
-			<?php
-	include ('inc/footer.html');
-	?>
+<?php
+include ('inc/footer.html');
+?>

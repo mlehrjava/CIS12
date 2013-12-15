@@ -1,9 +1,9 @@
-	<?php
-	ob_start();
-	session_start();
-	require ('inc/config.inc.php');
-	$page_title = 'Logout';
-	include ('inc/header.html');
+<?php
+ob_start();
+session_start();
+require ('inc/config.inc.php');
+$page_title = 'Logout';
+include ('inc/header.html');
 ?>
 
 

@@ -64,6 +64,23 @@ overflow-y:scroll;
 height:60%;
 }
 
+.table	{
+	position:relative;
+    border-collapse:collapse;
+	border: none;
+	text-align:left;
+}
+
+.table td	{
+	border-bottom:1px solid #000;
+	margin:0;
+	padding:10px 5px 5px 5px;
+	
+}
+
+
+
+
 #push	{
 height:1%;
 }

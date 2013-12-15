@@ -27,7 +27,7 @@ body	{
 	left:25%;
 	font-size:100%;
 	background-image:url(../img/transbeige.png);
-	
+	width:46%;
 	margin: 1% auto;
 	padding:2%;
 	min-height: 80%;
@@ -63,6 +63,23 @@ width:42%;
 overflow-y:scroll;
 height:60%;
 }
+
+.table	{
+	position:relative;
+    border-collapse:collapse;
+	border: none;
+	text-align:left;
+}
+
+.table td	{
+	border-bottom:1px solid #000;
+	margin:0;
+	padding:10px 5px 2px 5px;
+	
+}
+
+
+
 
 #push	{
 height:1%;

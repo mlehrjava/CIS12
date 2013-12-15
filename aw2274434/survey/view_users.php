@@ -1,9 +1,9 @@
 <?php
-	session_start();
-	require ('inc/config.inc.php');
-	$page_title = 'Registration';
-	include ('inc/header.html');
-	?>
+session_start();
+require ('inc/config.inc.php');
+$page_title = 'Registration';
+include ('inc/header.html');
+?>
 
 <!-------------------------------------View Users------------------------------------->
 				
@@ -68,7 +68,7 @@
 			
 			
 			
-			$q = "SELECT username, last_name, first_name, DATE_FORMAT(reg_date, '%M %d, %Y') AS dr, user_id FROM aw2274434_karate_users ORDER BY $order_by LIMIT $start, $display";		
+			$q = "SELECT username, last_name, first_name, DATE_FORMAT(reg_date, '%M %d, %Y') AS dr, user_id FROM aw2274434_survey_users ORDER BY $order_by LIMIT $start, $display";		
 			$r = @mysqli_query ($dbc, $q);
 			
 			
@@ -79,12 +79,13 @@
 			
 			echo '<table class="table" id="usrtable" >
 				<tr>
-					<td align="center"></td>
-					<td align="center"></td>
-					<td align="left"><h3><a href="view_users.php?sort=un">Username</a></h3></td>
-					<td align="left"><h3><a href="view_users.php?sort=ln">Last Name</a></h3></td>
-					<td align="left"><h3><a href="view_users.php?sort=fn">First Name</a></h3></td>
-					<td align="left"><h3><a href="view_users.php?sort=rd">Date Registered</a></h3></td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left"></td>
+					<td align="left"><h4><a href="view_users.php?sort=un">Username</a></h4></td>
+					<td align="left"><h4><a href="view_users.php?sort=ln">Last Name</a></h4></td>
+					<td align="left"><h4><a href="view_users.php?sort=fn">First Name</a></h4></td>
+					<td align="left"><h4><a href="view_users.php?sort=rd">Date Registered</a></h4></td>
 				</tr>
 				';
 			//$bg = '#eeeeee'; 
@@ -92,11 +93,13 @@
 				//$bg = ($bg=='#770000');
 				//echo '<tr bgcolor="' . $bg . '">
 				echo '<tr>';
+						echo '<td align="center"><a href="surveyres.php?id=' . $row['user_id'] . '">Survey Results</a></td>';
 							if ($_SESSION['user_level'] == 1) {	//IF ADMIN
 									echo '<td align="left"><a href="edit_user.php?id=' . $row['user_id'] . '">Edit</a></td>
 									<td align="left"><a href="delete_user.php?id=' . $row['user_id'] . '">Delete</a></td>';
 									} else {
 									echo '<td align="center"></td>
+									<td align="center"></td>
 									<td align="center"></td>';
 									}
 						echo '<td align="left">' . $row['username'] . '</td>

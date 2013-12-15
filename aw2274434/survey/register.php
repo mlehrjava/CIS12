@@ -1,9 +1,9 @@
-	<?php
-	session_start();
-	require ('inc/config.inc.php');
-	$page_title = 'Registration';
-	include ('inc/header.html');
-	?>
+<?php
+session_start();
+require ('inc/config.inc.php');
+$page_title = 'Registration';
+include ('inc/header.html');
+?>
 
 <!-------------------------------------Register------------------------------------->
 				<h2 class="pgtitle">Register</h1></br>

@@ -1,10 +1,10 @@
-	<?php
-	ob_start();
-	session_start();
-	require ('inc/config.inc.php');
-	$page_title = 'Edit User Info';
-	include ('inc/header.html');
-	?>
+<?php
+ob_start();
+session_start();
+require ('inc/config.inc.php');
+$page_title = 'Edit User Info';
+include ('inc/header.html');
+?>
 	<style>
 div#body_container>a.tab01 {
 	background:url(inc/img/button-hov.png) no-repeat center;
@@ -68,7 +68,7 @@ div#body_container>a.tab01 {
 			if (!preg_match('/^\s*[A-Za-z-.\'\s]{2,40}\s*$/', $_POST ['last_name'])){
 				$errors[] = 'You may not use one or more of characters that you provided in your last name.';
 				} else {
-				$fn = mysqli_real_escape_string($dbc, trim($_POST['last_name']));
+				$ln = mysqli_real_escape_string($dbc, trim($_POST['last_name']));
 				}
 
 			if (empty($_POST['email'])) {
@@ -77,7 +77,7 @@ div#body_container>a.tab01 {
 				$e = mysqli_real_escape_string($dbc, trim($_POST['email']));
 				}
 				
-			if (!preg_match('/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/', $trimmed['email'])){
+			if (!preg_match('/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/', $_POST['email'])){
 				$errors[] = 'You may not use one or more of characters that you provided in your email.';
 				} else {
 				$e = mysqli_real_escape_string($dbc, trim($_POST['email']));
